@@ -1,0 +1,15 @@
+{{each data}}
+<li class="product-item">
+    <a href="#">
+        <p class="product-pic">
+            <img src={{$value.image_src}} alt="" class="product-image">
+        </p>
+        <p class="product-name">
+            {{$value.name}}
+        </p>
+        <p class="product-price">
+            ￥ 3799元起
+        </p>
+    </a>
+</li>
+{{/each}}

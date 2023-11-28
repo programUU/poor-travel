@@ -1,0 +1,7 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    /* 把滚动条禁止 */
+    overflow:hidden;
+}

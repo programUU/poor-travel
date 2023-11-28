@@ -1,0 +1,16 @@
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+    /* 阻止点击默认效果  */
+    -webkit-tap-highlight-color: transparent;
+}
+img{
+    /* 去除缝隙 */
+    vertical-align: top;
+}

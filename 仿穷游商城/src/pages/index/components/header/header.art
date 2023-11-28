@@ -1,0 +1,4 @@
+<!-- 只负责header结构 -->
+<div class="header">
+    {{include '../../../../components/searchbox/searchbox.art'}}
+</div>

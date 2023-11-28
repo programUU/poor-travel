@@ -1,0 +1,13 @@
+<!-- 选项卡组件 -->
+<div class="tab-layout">
+    <!-- 选项卡也导入 -->
+    {{include '../tab/tab.art'}}
+</div>
+
+
+<!-- 内容 -->
+<div id="destination-content" class="content-layout">
+    <!-- 内容也是引入 -->
+    <!-- 刚开始也是 loading -->
+    {{include '../../../../components/loading/loading.art'}}
+</div>

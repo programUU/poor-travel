@@ -1,0 +1,20 @@
+<div class="tabbar">
+    <!-- 怎么样确定点击的是哪一个 -->
+    <!-- 设置一个参数 -->
+    <!-- 如果传的是参数是index 则添加样式 否则不添加 -->
+    <a href="index.html" class="tabbar-item {{
+        active==='index'?'tabbar-item-active':''}}">
+        <i class="iconfont icon-shouye"></i>
+        <span>首页</span>
+    </a>
+    <a href="destination.html" class="tabbar-item {{
+        active==='destination'?'tabbar-item-active':''}}">
+        <i class="iconfont icon-mudedi"></i>
+        <span>目的地</span>
+    </a>
+    <a href="#" class="tabbar-item {{
+        active==='personal'?'tabbar-item-active':''}}">
+        <i class="iconfont icon-wode"></i>
+        <span>我的</span>
+    </a>
+</div>

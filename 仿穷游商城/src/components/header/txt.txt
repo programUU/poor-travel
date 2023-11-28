@@ -1,0 +1,59 @@
+import './header.css';
+
+
+/* 需要改变的样式 */
+const CHANGED_CLASS_NAME = 'header-transition';
+/* 初始状态 */
+const INIT_STATE = 'init';
+/* 改变之后的状态 */
+const CHANGED_STATE = 'changed';
+
+class Header {
+    constructor(el, critical_point, scrollContainer, eventEl = scrollContainer) {
+        this.el = el;
+        this.critical_point = critical_point;
+        this.scrollContainer = scrollContainer;
+        this.eventEl = eventEl;
+
+        this.setState(INIT_STATE);
+        this.bindEvent();
+    }
+
+    setState(state) {
+        this.state = state;
+    }
+
+    bindEvent() {
+        this.eventEl.addEventListener(
+            'scroll',
+            () => {
+                if (this.needChange()) {
+                    this.setState(CHANGED_STATE);
+                    this.change();
+                } else if (this.needReset()) {
+                    this.setState(INIT_STATE);
+                    this.reset();
+                }
+            },
+            false
+        )
+    }
+    /* 是否需要还原 */
+    needReset() {
+        return this.state !== INIT_STATE && this.scrollContainer.scrollTop <= this.critical_point;
+    }
+    /* 是否需要改变 */
+    needChange() {
+        return this.state !== CHANGED_CLASS_NAME && this.scrollContainer.scrollTop > this.critical_point;
+    }
+    /* 修改状态 */
+    change() {
+        this.el.classList.add(CHANGED_CLASS_NAME);
+    }
+    /* 还原 */
+    reset() {
+        this.el.classList.remove(CHANGED_CLASS_NAME);
+    }
+}
+
+export default Header

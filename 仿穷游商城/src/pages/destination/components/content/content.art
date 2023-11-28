@@ -1,0 +1,10 @@
+<ul class="content" id="content-list">
+    {{each item}}
+    <li class="content-item">
+        <a href="#">
+            <img src="{{$value.url}}" alt="" class="content-img">
+            <span class="content-text">{{$value.text}}</span>
+        </a>
+    </li>
+    {{/each}}
+</ul>

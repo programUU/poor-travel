@@ -1,0 +1,10 @@
+<ul class="tab" id="tab">
+    <!-- 发送请求根据 data-n的值 辨别不同 -->
+    <li class="tab-item tab-item-active" data-n="1">亚洲</li>
+    <li class="tab-item" data-n="2">欧洲</li>
+    <li class="tab-item" data-n="3">非洲</li>
+    <li class="tab-item" data-n="4">北美洲</li>
+    <li class="tab-item" data-n="5">大洋洲</li>
+    <li class="tab-item" data-n="6">南美洲</li>
+    <li class="tab-item" data-n="7">南极洲</li>
+</ul>

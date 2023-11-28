@@ -1,0 +1,27 @@
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 20.5px;
+}
+.nav-item{
+    width: 25%;
+    margin-bottom: 20.5px;
+}
+
+.nav-link{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #999;
+    font-size: 12px;
+}
+
+.nav-img{
+    /* 这个img 测量 44px */
+    /* 要看看 44px占 一个li的多少 */
+    /* li: 375/4 */
+    width: 46.93333%;
+    margin-bottom: 6px;
+}  
